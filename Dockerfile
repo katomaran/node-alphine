@@ -2,6 +2,6 @@
 FROM node:12-alpine
 
 RUN apk --update --no-cache add git curl
-RUN npm install -g newman
+RUN npm install -g newman newman-reporter-html
 
 WORKDIR /usr/app
